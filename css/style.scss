@@ -22,9 +22,12 @@
 
 body {
     background: var(--primary-dark-cyan);
-    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: -100% 150%, 150% -100% ;
+    background-size: auto;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-position-x: right 52vw, left 48vw; 
+    background-position-y: bottom 35vh, top 52vh;
 }
 
 main {
@@ -34,7 +37,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    article{
+    >section{
         background: #fff;
         border-radius: 1em;
         overflow: hidden;
@@ -45,23 +48,22 @@ main {
                     // padding-top: 2.5em!important;
                     padding: 3em 1em 2em 1em;
                     padding-bottom: 0;               
+                    margin-top: -6.5em;
                     >img{
-                    position: absolute;
+                    // position: absolute;
                     border: 0.3em solid #fff;
                     border-radius: 50%;
-                    top: -57%;
-                    left: 50%;
-                    transform: translate(-50%, 70%);
                 }
                 #person{
                     margin-top: 1em;
                     font-size: 1.125rem;
+                    font-weight: 600;
                     margin-bottom: 0.4em;
                     color: var(--primary-very-dark-desaturated-blue);
                 }
                 #person_age{
                  color: var(--neutral-dark-gray); 
-                 padding-left: 0.7em;  
+                 padding-left: 0.4em;  
                  font-weight: 400;
                 }
                 #location{
