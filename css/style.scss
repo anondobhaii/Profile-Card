@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    // Primary
+    --primary-dark-cyan: hsl(185, 75%, 39%);
+    --primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+
+    // Neutral
+    --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+// font-size: 1.125rem;
+
+body {
+    background: var(--primary-dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    article{
+        background: #fff;
+        border-radius: 1em;
+        overflow: hidden;
+        section{
+            &:last-child{
+                position: relative;
+                .Card__bottom__iden{
+                    // padding-top: 2.5em!important;
+                    padding: 3em 1em 2em 1em;
+                    padding-bottom: 0;               
+                    >img{
+                    position: absolute;
+                    border: 0.3em solid #fff;
+                    border-radius: 50%;
+                    top: -57%;
+                    left: 50%;
+                    transform: translate(-50%, 70%);
+                }
+                #person{
+                    margin-top: 1em;
+                    font-size: 1.125rem;
+                    margin-bottom: 0.4em;
+                }
+                #person_age{
+                 color: var(--neutral-dark-gray); 
+                 padding-left: 0.7em;  
+                 font-weight: 400;
+                }
+                #location{
+                 color: var(--neutral-dark-gray); 
+                 margin-bottom: 1.5em;
+                 font-size: 15px;
+                }
+                }
+                #line{
+                    width: 100%;
+                    height: 1px;
+                    background: var(--neutral-dark-gray);   
+                    opacity: 0.3;               
+                }
+                .Card__bottom__stats{
+                    padding: 1.5em 1em;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    h2{
+                        font-size: 1.125rem;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: var(--neutral-dark-gray);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
