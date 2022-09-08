@@ -23,6 +23,8 @@
 body {
     background: var(--primary-dark-cyan);
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -100% 150%, 150% -100% ;
 }
 
 main {
@@ -85,9 +87,9 @@ main {
                         color: var(--primary-very-dark-desaturated-blue);
                     }
                     p{
-                        font-size: 12px;
+                        font-size: 10px;
                         color: var(--primary-dark-grayish-blue);
-                        letter-spacing: 1px;
+                        letter-spacing: 0.125rem;
                     }
                 }
             }
